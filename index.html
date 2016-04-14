@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>The DOM playground</title>
   <link rel="stylesheet" href="app.css">
-  <script src="app.js"></script>
 </head>
 <body>
   <div id="greeting">
@@ -17,11 +16,11 @@
 
   <div id="essentials">
     <ul>
-      <li>milk</li>
-      <li class="selected">honey</li>
-      <li>water</li>
-      <li>wine</li>
-      <li>beer</li>
+      <li onclick="changeImage('images/milk.jpeg')">milk</li>
+      <li class="selected" onclick="changeImage('images/honey.jpeg')">honey</li>
+      <li onclick="changeImage('images/water.jpeg')">water</li>
+      <li onclick="changeImage('images/milk.jpeg')">wine</li>
+      <li onclick="changeImage('images/beer.jpeg')">beer</li>
     </ul>
   </div>
 
@@ -39,4 +38,5 @@
 
   <input type="submit" value="Reset" id="reset"></input>
 </body>
+<script src="app.js"></script>
 </html>
